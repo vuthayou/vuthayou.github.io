@@ -17,14 +17,13 @@ $(document).ready(function() {
         $("#input").keypress(function() {
             if (j < script.length) {
                 numChars = Math.floor(Math.random() * MAXNUM) + 1;
-                console.log("Random chars # is " + numChars);
+                //console.log("Random chars # is " + numChars);
                 for (var i = j; i < j + numChars; i++) {
-                    console.log(i);
+                    //console.log(i);
                     tmpStr += script[i];
                 }
-                j += numChars;
-                
-                console.log(tmpStr);
+                j += numChars; 
+                //console.log(tmpStr);
                 autoWrite(tmpStr);
                 
             }

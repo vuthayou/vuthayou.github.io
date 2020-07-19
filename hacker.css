@@ -1,0 +1,49 @@
+@font-face {
+    font-family: Hacked;
+    src: url(https://hackedfont.com/HACKED.ttf);
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #7ac75c, 0 0 40px #88c556, 0 0 50px #5cd651, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #8b4dff, 0 0 40px #ad34fd, 0 0 50px #684dff, 0 0 60px #4da0ff, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+body {
+    height: 100%;
+
+    background: url("https://media.giphy.com/media/WoD6JZnwap6s8/giphy.gif");
+    background-size: cover;
+    /*background-repeat: no-repeat;*/
+    
+}
+
+div {
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+#logo {
+    font-family: Hacked;
+    font-size: 100px;
+    color: #60FF14;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+#input {
+    opacity: 2%;
+}
+
+#output {
+    font-family: Hacked;
+    font-size: 20px;
+    font-weight: light;
+    color: #60FF14;
+}
+
