@@ -14,7 +14,7 @@ $(document).ready(function() {
         script = data;
         
         //call autowrite when key is pressed
-        $("#input").keypress(function() {
+        $(document).keypress(function() {
             if (j < script.length) {
                 numChars = Math.floor(Math.random() * MAXNUM) + 1;
                 //console.log("Random chars # is " + numChars);
